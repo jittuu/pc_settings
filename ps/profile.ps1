@@ -41,5 +41,8 @@ function prompt() {
     } 
     else {
         Import-Module Posh-Git
+        
+        # start ssh
+        Start-SshAgent -Quiet
     }
 }
