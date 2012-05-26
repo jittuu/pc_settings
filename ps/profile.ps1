@@ -3,7 +3,7 @@ function prompt() {
     $host.ui.RawUI.WindowTitle = $loc
     $dir = [System.IO.Path]::GetFileName($loc)
     Write-Host "PS /" -nonewline
-    Write-Host "$($dir)" -nonewline -Foreground Blue
+    Write-Host "$($dir)" -nonewline -Foreground Yellow
       
     # writing git status
     $status = Get-GitStatus
