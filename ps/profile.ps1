@@ -42,6 +42,9 @@ function prompt() {
     else {
         Import-Module Posh-Git
         
+        # set TERM as msys
+        $env:TERM = "msys"
+        
         # start ssh
         Start-SshAgent -Quiet
     }
