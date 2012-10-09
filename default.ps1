@@ -10,6 +10,7 @@ Task LinkFiles {
     $profile_folder = Resolve-Path ~/Documents/WindowsPowershell
     Get-ChildItem ps\ | % { 
         $name = $_.Name
-        New-Symlink "$profile_folder\$name" ps\$name
+        $target = Resolve-Path ps\$name
+        & cmd /c mklink "$profile_folder\$name" $target
     }
 }

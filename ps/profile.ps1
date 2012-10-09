@@ -32,7 +32,6 @@ function prompt() {
 & {
     # import modules
     Import-Module PsGet
-    Import-Module pscx
     Import-Module PsUrl
 
     # If Posh-Git environment is defined, load it. which is installed by GitHub For Windows
