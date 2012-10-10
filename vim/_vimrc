@@ -3,6 +3,9 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
+" load pathogen
+call pathogen#infect()
+
 " base customization
 set number
 set ruler
