@@ -1,3 +1,6 @@
 [submodule "vim/vimfiles/bundle/nerdcommenter"]
 	path = vim/vimfiles/bundle/nerdcommenter
 	url = git://github.com/ddollar/nerdcommenter.git
+[submodule "vim/vimfiles/bundle/powershell"]
+	path = vim/vimfiles/bundle/powershell
+	url = git://github.com/vim-scripts/Windows-PowerShell-Syntax-Plugin.git
