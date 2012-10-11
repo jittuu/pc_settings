@@ -10,3 +10,6 @@
 [submodule "vim/vimfiles/bundle/supertab"]
 	path = vim/vimfiles/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
+[submodule "vim/vimfiles/bundle/easymotion"]
+	path = vim/vimfiles/bundle/easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
