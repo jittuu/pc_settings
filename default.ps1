@@ -22,6 +22,7 @@ Task SetupVim -Depends CreateVimTmp,LinkVimFiles
 Task CreateVimTmp {
   if(!(Test-Path ~/vimtmp)) {
     & mkdir ~/vimtmp
+    & mkdir ~/vimtmp/backup
   }
 }
 
