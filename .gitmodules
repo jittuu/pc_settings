@@ -7,3 +7,6 @@
 [submodule "vim/vimfiles/bundle/nerdtree"]
 	path = vim/vimfiles/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule "vim/vimfiles/bundle/supertab"]
+	path = vim/vimfiles/bundle/supertab
+	url = git://github.com/ervandew/supertab.git
