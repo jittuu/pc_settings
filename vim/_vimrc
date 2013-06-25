@@ -70,11 +70,14 @@ hi LineNr guifg=#505050
 set backupdir=~/vimtmp/backup
 set directory=~/vimtmp/backup
 
+" map Leader key to ,
+let mapleader = ","
+
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
-" map Leader key to ,
-let mapleader = ","
+" NERDTree toggle
+map <Leader>d :NERDTreeToggle<CR>
 
 :command C let @/=""
