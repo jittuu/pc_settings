@@ -7,6 +7,9 @@ set nocompatible
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
+" Windowing
+set splitright
+
 " load pathogen
 call pathogen#infect()
 
