@@ -16,6 +16,3 @@
 [submodule ".\\vim\\vimfiles\\bundle\\golang"]
 	path = .\\vim\\vimfiles\\bundle\\golang
 	url = https://github.com/jnwhiteh/vim-golang.git
-[submodule ".\\vim\\vimfiles\\bundle\\gocode"]
-	path = .\\vim\\vimfiles\\bundle\\gocode
-	url = https://github.com/Blackrush/vim-gocode.git
