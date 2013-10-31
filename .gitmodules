@@ -16,6 +16,9 @@
 [submodule "vim/vimfiles/bundle/golang"]
 	path = vim/vimfiles/bundle/golang
 	url = git@github.com:jnwhiteh/vim-golang.git
-[submodule ".vim/vimfiles/bundle/vim-colors-solarized"]
+[submodule "vim/vimfiles/bundle/vim-colors-solarized"]
 	path = vim/vimfiles/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/vimfiles/bundle/vim-gocode"]
+	path = vim/vimfiles/bundle/vim-gocode
+	url = git@github.com:Blackrush/vim-gocode.git
