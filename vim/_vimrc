@@ -72,6 +72,9 @@ colorscheme solarized
 set completeopt-=preview
 set completeopt+=longest
 
+" supertab
+let g:SuperTabDefaultCompletionType = "context"
+
 " Directories for swp files
 set backupdir=~/vimtmp/backup
 set directory=~/vimtmp/backup
