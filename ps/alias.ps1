@@ -17,7 +17,7 @@ Set-Alias g_c Git-Commit
 function Git-CheckOut { git checkout @args }
 Set-Alias g_co Git-CheckOut
 
-function Git-Diff { git diff --word-diff=color @args }
+function Git-Diff { git diff @args }
 Set-Alias g_d Git-Diff
 
 function Git-Graph { git log --all --oneline --graph --decorate=short }
