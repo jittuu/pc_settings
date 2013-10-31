@@ -68,6 +68,10 @@ endif
 set background=dark
 colorscheme solarized
 
+" omnicomplete
+set completeopt-=preview
+set completeopt+=longest
+
 " Directories for swp files
 set backupdir=~/vimtmp/backup
 set directory=~/vimtmp/backup
