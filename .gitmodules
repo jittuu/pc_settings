@@ -22,3 +22,6 @@
 [submodule "vim/vimfiles/bundle/vim-gocode"]
 	path = vim/vimfiles/bundle/vim-gocode
 	url = git@github.com:Blackrush/vim-gocode.git
+[submodule "vim/vimfiles/bundle/ctrlp"]
+	path = vim/vimfiles/bundle/ctrlp
+	url = git@github.com:kien/ctrlp.vim.git
