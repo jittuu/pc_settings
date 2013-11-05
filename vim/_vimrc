@@ -89,4 +89,4 @@ map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " NERDTree toggle
 map <Leader>d :NERDTreeToggle<CR>
 
-:command C let @/=""
+:command! C let @/=""
