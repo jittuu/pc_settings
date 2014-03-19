@@ -31,7 +31,7 @@ function prompt() {
 
 function VsCmd() {
     #Set environment variables for Visual Studio Command Prompt
-    pushd 'c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC'
+    pushd 'c:\Program Files (x86)\Microsoft Visual Studio 12.0\VC'
     cmd /c "vcvarsall.bat&set" |
     foreach {
       if ($_ -match "=") {
