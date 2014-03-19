@@ -56,9 +56,6 @@ function VsCmd() {
 
         # set TERM as msys
         $env:TERM = "msys"
-
-        # start ssh
-        Start-SshAgent -Quiet
     }
 }
 
