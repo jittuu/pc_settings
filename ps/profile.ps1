@@ -42,6 +42,12 @@ function VsCmd() {
     write-host "`nVisual Studio 2010 Command Prompt variables set." -ForegroundColor Green
 }
 
+function Delete-MergedBranches ($Commit = 'HEAD', [switch]$Force) {
+    git branch --merged $Commit |
+        ? { $_ -notmatch '(^\*)|(^. master$)' } |
+        % { git branch $(if($Force) { '-D' } else { "-d" }) $_.Substring(2) }
+}
+
 & {
     # import modules
     Import-Module PsGet
