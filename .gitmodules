@@ -1,6 +1,3 @@
-[submodule "vim/vimfiles/bundle/easymotion"]
-	path = vim/vimfiles/bundle/easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
 [submodule "vim/vimfiles/bundle/golang"]
 	path = vim/vimfiles/bundle/golang
 	url = git@github.com:jnwhiteh/vim-golang.git
