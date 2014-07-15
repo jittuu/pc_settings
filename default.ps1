@@ -1,4 +1,4 @@
-Task default -Depends SetupProfile
+Task default -Depends SetupProfile,SetupVim
 
 Task SetupProfile -Depends DeleteProfileFile,LinkProfileFiles
 
@@ -15,4 +15,21 @@ Task LinkProfileFiles {
         $target = Resolve-Path ps\$name
         & cmd /c mklink "$profile_folder\$name" $target
     }
+}
+
+Task SetupVim -Depends CreateVimTmp,LinkVimFiles
+
+Task CreateVimTmp {
+  if(!(Test-Path ~/vimtmp)) {
+    & mkdir ~/vimtmp
+    & mkdir ~/vimtmp/backup
+  }
+}
+
+Task LinkVimFiles {
+  $vimrc = Resolve-Path vim\_vimrc
+  &cmd /c mklink "$HOME\_vimrc" $vimrc
+
+  $vimfiles = Resolve-Path vim\vimfiles
+  &cmd /c mklink /d "$HOME\vimfiles" $vimfiles
 }
