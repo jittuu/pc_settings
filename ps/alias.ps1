@@ -28,3 +28,7 @@ Set-Alias n_ls Get-Package
 Set-Alias n_i Install-Package
 Set-Alias n_rm Uninstall-Package
 Set-Alias n_u Update-Package
+
+# gae goapp
+function GoApp-Gae { goapp serve -clear_datastore }
+Set-Alias gogae GoApp-Gae
