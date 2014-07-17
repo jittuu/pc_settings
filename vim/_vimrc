@@ -97,8 +97,11 @@ let mapleader = ","
 " Normal mode: <Leader>e
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
-" NERDTree toggle
-" map <Leader>d :NERDTreeToggle<CR>
-
 " Clear search result highlight
 :command! C let @/=""
+
+" window movement
+map <C-h> <C-W>h
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-l> <C-W>l
