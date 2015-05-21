@@ -32,3 +32,6 @@ Set-Alias n_u Update-Package
 # gae goapp
 function GoApp-Gae { goapp serve -clear_datastore }
 Set-Alias gogae GoApp-Gae
+
+# which
+function which($name) { Get-Command $name | Select-Object -ExpandProperty Definition }
