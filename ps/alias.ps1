@@ -35,3 +35,6 @@ Set-Alias gogae GoApp-Gae
 
 # which
 function which($name) { Get-Command $name | Select-Object -ExpandProperty Definition }
+
+# hub
+Set-Alias git hub
