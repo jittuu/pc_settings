@@ -1,33 +1,33 @@
 # git
 function Git-Status { git status -s @args }
-Set-Alias g_s Git-Status
+Set-Alias ghs Git-Status
 
 function Git-Pull { git pull --rebase @args }
-Set-Alias g_l Git-Pull
+Set-Alias ghl Git-Pull
 
 function Git-Push { git push @args }
-Set-Alias g_p Git-Push
+Set-Alias ghp Git-Push
 
 function Git-AddAll { git add -A }
-Set-Alias g_a Git-AddAll
+Set-Alias gha Git-AddAll
 
 function Git-Commit { git commit @args }
-Set-Alias g_c Git-Commit
+Set-Alias ghc Git-Commit
 
 function Git-CheckOut { git checkout @args }
-Set-Alias g_co Git-CheckOut
+Set-Alias ghco Git-CheckOut
 
 function Git-Diff { git diff @args }
-Set-Alias g_d Git-Diff
+Set-Alias ghd Git-Diff
 
 function Git-Graph { git log --all --oneline --graph --decorate=short }
-Set-Alias g_g Git-Graph
+Set-Alias ghg Git-Graph
 
 # nuget
-Set-Alias n_ls Get-Package
-Set-Alias n_i Install-Package
-Set-Alias n_rm Uninstall-Package
-Set-Alias n_u Update-Package
+Set-Alias ngls Get-Package
+Set-Alias ngi Install-Package
+Set-Alias ngrm Uninstall-Package
+Set-Alias ngu Update-Package
 
 # gae goapp
 function GoApp-Gae { goapp serve -clear_datastore }
